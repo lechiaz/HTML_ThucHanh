@@ -2,12 +2,12 @@
     box-sizing: border-box;
     font-family: Tahoma;
 }
+
 body {
     /*background-image: url("../img/bacgroundLogin.png");*/
     background: #dedede;
     background-size: cover;
 }
-
 
 .msg-error {
     color: red;
@@ -24,14 +24,20 @@ body {
     clear: both;
     display: table;
 }
+
 [class*="col-"] {
     float: left;
     padding: 15px;
     width: 100%;
 }
-
-.logo img {
-    width: 50%;
+.sologan {
+    margin: 2% 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+img {
+    width: 100%;
+    background-size: cover;
 }
 
 input[type=text], input[type=password], input[type=email] {
@@ -43,15 +49,43 @@ input[type=text], input[type=password], input[type=email] {
     background: #f1f1f1;
     border-radius: 10px;
 }
-input[type=date]{
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-    border-radius: 10px;
-}
+
 textarea {
     width: 100%;
     display: inline-block;
+    border-radius: 10px;
+}
+h1 {
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-submit, .btn-reset {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: #dedede;
+    margin: 0;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+[class*="btn-"]:hover {
+    background-color: #ED3237;
+}
+.row {
+    padding: 0 15%;
+}
+.header.row {
+    padding: 0;
+}
+.header {
+    background: #f1f1f1;
+}
+.main-content {
+    margin: 0 25%;
+    background: beige;
     border-radius: 10px;
 }
 
@@ -65,42 +99,113 @@ textarea {
 
 @media only screen and (max-width: 600px) {
     /* For phone: */
-    .col-p-4 {
-        width: 33.33%;
+    .main-content {
         margin: 0;
-        padding: 2% 1%;
+        border: 1px solid;
     }
+
 }
+
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
 }
 
